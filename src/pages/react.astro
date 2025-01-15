@@ -1,8 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Calculator from '../components/React.astro';
+import '@/styles/globals.css'
 ---
 
 <Layout>
-	<Calculator />
+	<div class="flex items-center justify-center min-h-screen">
+    <Calculator />
+  </div>
 </Layout>
