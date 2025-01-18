@@ -3,7 +3,7 @@ import { Button } from "../../components/ui/button/button";
 import { Card } from "../../components/ui/card/card";
 import { Textarea } from "../../components/ui/textarea/textarea";
 
-const Calculator = () => {
+export const Calculator = () => {
   // setup state
   const [display, setDisplay] = useState<string>("0");
   const [currentValue, setCurrentValue] = useState<string>("");
@@ -22,7 +22,6 @@ const Calculator = () => {
   };
 
   const handleOperationClick = (operation: string) => {
-    console.log("Operation clicked:", operation);
     switch (operation) {
       case "C":
         setDisplay("0");

@@ -1,11 +1,21 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import ReactCalculator from '@/react/components/Calculator';
+import SvelteCalculator from '@/svelte/components/Calculator.svelte';
 import '@/styles/globals.css'
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<div class="flex items-center justify-center min-h-screen">
+		<section class="m-3 p-4 rounded-xl bg-sky-950 text-center">
+			<h2 class="pb-4 text-xl font-medium">React</h2>
+			<ReactCalculator client:load/>
+		</section>
+    <section class="m-3 p-4 rounded-xl bg-orange-900 text-center">
+			<h2 class="pb-4 text-xl font-medium">Svelte</h2>
+			<SvelteCalculator client:load/></section>
+  </div>
+	
 </Layout>

@@ -39,7 +39,6 @@
 	};
 
 	const handleOperationClick = (op: string) => {
-		console.log("Operation clicked: ", op)
 		switch (op) {
 			case "C":
 				display = "0";
