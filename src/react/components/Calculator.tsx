@@ -111,9 +111,9 @@ const Calculator = () => {
           </Button>
         ))}
       </div>
-      <div>Previous Value: {previousValue}</div>
+      {/* <div>Previous Value: {previousValue}</div>
       <div>Current Value: {currentValue}</div>
-      <div>Operation: {operation}</div>
+      <div>Operation: {operation}</div> */}
     </Card>
   );
 };
