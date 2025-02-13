@@ -26,7 +26,7 @@ To run this project locally:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/calculator-astro.git
+   git clone https://github.com/Jehrman27/calculator-astro.git
    cd calculator-astro
    ```
 
