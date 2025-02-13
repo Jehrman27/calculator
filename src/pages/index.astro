@@ -3,19 +3,25 @@ import Layout from '../layouts/Layout.astro';
 import ReactCalculator from '@/react/components/Calculator';
 import SvelteCalculator from '@/svelte/components/Calculator.svelte';
 import '@/styles/globals.css'
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<div class="flex items-center justify-center min-h-screen">
-		<section class="m-3 p-4 rounded-xl bg-sky-950 text-center">
+	<div class="flex flex-col items-center justify-center min-h-screen gap-10">
+		<h1 class="text-4xl font-bold text-center">Astro Demo</h1>
+		<div>
+		<p class="text-center">This project is a simple calculator app built as a demo to explore how Astro can render components from different frameworks on the same page using islands architecture.</p>
+		<p>The two simple calculators function identically, but they showcase how Astro seamlessly ingegrates different frontend frameworks within a single project.</p>
+	</div>
+		<section class="flex">
+		<div class="m-3 p-4 rounded-xl bg-sky-950 text-center">
 			<h2 class="pb-4 text-xl font-medium">React</h2>
 			<ReactCalculator client:load/>
-		</section>
-    <section class="m-3 p-4 rounded-xl bg-orange-900 text-center">
+		</div>
+    <div class="m-3 p-4 rounded-xl bg-orange-900 text-center">
 			<h2 class="pb-4 text-xl font-medium">Svelte</h2>
-			<SvelteCalculator client:load/></section>
+			<SvelteCalculator client:load/>
+		</div>
+	</section>
   </div>
 	
 </Layout>
